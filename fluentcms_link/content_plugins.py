@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from fluent_contents.extensions import ContentPlugin, plugin_pool
+from django.utils.translation import ugettext_lazy as _
 
-from fluent_pages.models import Page
+from fluent_contents.extensions import ContentPlugin, plugin_pool
 
 from .models import LinkItem
 
@@ -21,8 +21,6 @@ class LinkPlugin(ContentPlugin):
             link = u"mailto:%s" % instance.mailto
         elif instance.url:
             link = instance.url
-        elif instance.page_link:
-            link = instance.page_link.url
         else:
             link = ""
 
