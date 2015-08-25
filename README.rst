@@ -7,7 +7,7 @@ to an external website.
 Installation
 ============
 
-First install the module, preferably in a virtual environment. It can be installed from PyPI::
+First install the module, preferably in a virtual environment. It can be installed from PyPI:
 
 .. code-block:: shell
 
@@ -19,7 +19,7 @@ Backend Configuration
 
 First make sure the project is configured for django-fluent-contents_.
 
-Then add the following settings::
+Then add the following settings:
 
 .. code-block:: python
 
@@ -27,7 +27,7 @@ Then add the following settings::
         'fluentcms_link',
     )
 
-The database tables can be created afterwards::
+The database tables can be created afterwards:
 
 .. code-block:: shell
 
@@ -38,9 +38,6 @@ Now, the ``LinkPlugin`` can be added to your ``PlaceholderField`` and
 
 Frontend Configuration
 ----------------------
-
-HTML code
-~~~~~~~~~
 
 If needed, the HTML code can be overwritten by redefining ``fluentcms_link/link.html``.
 
