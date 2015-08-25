@@ -1,0 +1,5 @@
+django
+django-any-urlfield
+django-fluent-contents
+django-fluent-pages
+south
