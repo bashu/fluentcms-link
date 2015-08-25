@@ -39,9 +39,6 @@ Now, the ``LinkPlugin`` can be added to your ``PlaceholderField`` and
 Frontend Configuration
 ----------------------
 
-HTML code
-~~~~~~~~~
-
 If needed, the HTML code can be overwritten by redefining ``fluentcms_link/link.html``.
 
 Contributing
