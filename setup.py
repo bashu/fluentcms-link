@@ -1,10 +1,11 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
-from os import path
-import codecs
+
 import os
 import re
 import sys
+import codecs
+
+from setuptools import setup, find_packages
 
 
 # When creating the sdist, make sure the django.mo file also exists:
@@ -23,7 +24,7 @@ if 'sdist' in sys.argv or 'develop' in sys.argv:
 
 
 def read(*parts):
-    file_path = path.join(path.dirname(__file__), *parts)
+    file_path = os.path.join(os.path.dirname(__file__), *parts)
     return codecs.open(file_path, encoding='utf-8').read()
 
 
@@ -41,7 +42,7 @@ setup(
     license='Apache License, Version 2.0',
 
     install_requires=[
-        'django-fluent-pages>=0.9',
+        'django-fluent-contents>=1.0',
     ],
     requires=[
         'Django (>=1.4)',
