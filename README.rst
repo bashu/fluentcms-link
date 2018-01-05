@@ -7,9 +7,6 @@ to an external website.
 .. image:: https://img.shields.io/pypi/v/fluentcms-link.svg
     :target: https://pypi.python.org/pypi/fluentcms-link/
 
-.. image:: https://img.shields.io/pypi/dm/fluentcms-link.svg
-    :target: https://pypi.python.org/pypi/fluentcms-link/
-
 .. image:: https://img.shields.io/github/license/bashu/fluentcms-link.svg
     :target: https://pypi.python.org/pypi/fluentcms-link/
 
