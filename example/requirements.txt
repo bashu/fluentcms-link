@@ -2,5 +2,4 @@ django<2.0
 django-any-urlfield
 django-fluent-contents
 django-fluent-pages
-django-slug-preview
 south
