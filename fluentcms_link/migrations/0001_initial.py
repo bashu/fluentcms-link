@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='LinkItem',
             fields=[
-                ('contentitem_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='fluent_contents.ContentItem')),
+                ('contentitem_ptr', models.OneToOneField(parent_link=True, auto_created=True, primary_key=True, serialize=False, to='fluent_contents.ContentItem', on_delete=models.CASCADE)),
                 ('name', models.CharField(max_length=256, verbose_name='name')),
                 ('url', fluent_contents.extensions.PluginUrlField(max_length=300, null=True, verbose_name='URL', blank=True)),
                 ('mailto', models.EmailField(help_text='An email adress has priority over a text or page link.', max_length=75, null=True, verbose_name='mailto', blank=True)),
