@@ -1,9 +1,6 @@
 fluentcms-link
 ==============
 
-A plugin for django-fluent-contents_ to add a link to an other page or
-to an external website.
-
 .. image:: https://img.shields.io/pypi/v/fluentcms-link.svg
     :target: https://pypi.python.org/pypi/fluentcms-link/
 
@@ -13,9 +10,14 @@ to an external website.
 .. image:: https://img.shields.io/github/license/bashu/fluentcms-link.svg
     :target: https://pypi.python.org/pypi/fluentcms-link/
 
+.. image:: https://img.shields.io/travis/bashu/fluentcms-link.svg
+    :target: https://travis-ci.com/github/bashu/fluentcms-link/
+
+A plugin for django-fluent-contents_ to add a link to an other page or
+to an external website.
 
 Installation
-============
+------------
 
 First install the module, preferably in a virtual environment. It can be installed from PyPI:
 
@@ -25,7 +27,7 @@ First install the module, preferably in a virtual environment. It can be install
 
 
 Backend Configuration
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 First make sure the project is configured for django-fluent-contents_.
 
@@ -47,7 +49,7 @@ Now, the ``LinkPlugin`` can be added to your ``PlaceholderField`` and
 ``PlaceholderEditorAdmin`` admin screens.
 
 Frontend Configuration
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 If needed, the HTML code can be overwritten by redefining ``fluentcms_link/link.html``.
 
