@@ -1,6 +1,4 @@
-# -*- coding: utf-8 -*-
-
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from fluent_contents.extensions import ContentPlugin, plugin_pool
 
@@ -18,13 +16,13 @@ class LinkPlugin(ContentPlugin):
 
     def get_context(self, request, instance, **kwargs):
         if instance.mailto:
-            link = u"mailto:%s" % instance.mailto
+            link = "mailto:%s" % instance.mailto
         elif instance.url:
             link = instance.url
         else:
             link = ""
 
-        context = super(LinkPlugin, self).get_context(
+        context = super().get_context(
             request, instance, **kwargs)
 
         context.update({

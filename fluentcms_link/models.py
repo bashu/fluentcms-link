@@ -1,15 +1,10 @@
-# -*- coding: utf-8 -*-
-
-from future.utils import python_2_unicode_compatible
-
 from django.db import models
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from fluent_contents.extensions import PluginUrlField
 from fluent_contents.models.db import ContentItem
 
 
-@python_2_unicode_compatible
 class LinkItem(ContentItem):
 
     name = models.CharField(_("name"), max_length=256)
