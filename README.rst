@@ -10,8 +10,8 @@ fluentcms-link
 .. image:: https://img.shields.io/github/license/bashu/fluentcms-link.svg
     :target: https://pypi.python.org/pypi/fluentcms-link/
 
-.. image:: https://img.shields.io/travis/bashu/fluentcms-link.svg
-    :target: https://travis-ci.com/github/bashu/fluentcms-link/
+.. image:: https://app.travis-ci.com/bashu/fluentcms-link.svg?branch=develop
+    :target: https://app.travis-ci.com/bashu/fluentcms-link/
 
 A plugin for django-fluent-contents_ to add a link to an other page or
 to an external website.
